@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H-T</title>
+    </head>
+    <style>
+        body{
+          background-color: rgb(25,25,25);
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+        }
+       .Move-coin{
+        height:100px;
+       }
+       .bt-move{
+        background-color: transparent;
+        width:180px;
+        height:180px;
+        border: 2px solid white;
+        border-radius:90px;
+        cursor: pointer;
+        margin: 30px 20px;
+        
+       } 
+       .res{
+        font-weight: bold;
+        font-size:30px;
+        margin-bottom:20px;
+       }
+       .Move-coin1{
+        height:70px;
+        margin:5px;
+       }
+       .yc{
+        vertical-align:middle;
+        margin-left:50px;
+        font-size: 20px;
+        font-weight: bold;
+        align-items: center;
+       }
+       .cy{
+        vertical-align: sub;
+        margin-right: 20px;
+        font-size: 2opx;
+        font-weight: bolder;
+        align-items:center !important;
+       }
+       .img-res{
+        margin-top:30px;
+       }
+       .res1{
+        font-weight: bold;
+        font-size: 15px;
+        margin-top:30px ;
+       }
+       .Restart{
+        padding:8px 20px ;
+        font-size: 15px;
+        color:black;
+        font-weight: bold;
+        margin-top:20px ;
+       }
 
+    </style>
+    <body>
+        <h1 class="home">Heads or Tails</h1>
+        <button onclick="HT()" class="bt-move h">
+            <img src="../imges/head.jpg" class="Move-coin"></button>
+        <button onclick="TH()" class="bt-move t">
+            <img src="../imges/tail.jpg" class="Move-coin">
+        </button>
+        <p id="page" class="res"></p>
+        <p id="page2" class="img-res"></p>
+        <p id="page1" class="res1"></p>
+        <button onclick="Rest()" class="Restart">Restart</button>
+        <script src="../javascript/head-tail.js"></script>
+    </body>
+</html>

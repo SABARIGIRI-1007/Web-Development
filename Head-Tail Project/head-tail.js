@@ -5,7 +5,22 @@ const count =JSON.parse(localStorage.getItem('count')) || {
     let cv=''
     let h=''
 
+    let isAuto=false;
+    let id;
     console.log(typeof count);
+    function Autoplay(){
+        if(!isAuto){
+            id=setInterval(function(){
+                HT();
+                TH();
+            },1000)
+            isAuto=true;
+        }
+        else{
+            clearInterval(id);
+            isAuto=false;
+        }
+    }
 
     function flipCoin() {
         return Math.random() >= 0.5 ? 'head' : 'tail';
